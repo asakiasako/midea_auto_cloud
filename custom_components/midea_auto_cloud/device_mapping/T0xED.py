@@ -266,5 +266,86 @@ DEVICE_MAPPING = {
                 },
             }
         }
+    },
+    "63200872": {
+        "rationale": ["off", "on"],
+        "queries": [{}],
+        "centralized": [],
+        "entities": {
+            Platform.SWITCH: {
+                "drainage": {"device_class": SwitchDeviceClass.SWITCH},
+                "wash": {
+                    "device_class": SwitchDeviceClass.SWITCH,
+                    "translation_key": "wash_filter_cartridge"
+                },
+                "antifreeze": {"device_class": SwitchDeviceClass.SWITCH},
+                "smart_no_obsolete_water": {"device_class": SwitchDeviceClass.SWITCH},
+                "extreme_mode": {
+                    "device_class": SwitchDeviceClass.SWITCH,
+                    "translation_key": "no_obsolete_water_extreme_mode"
+                },
+            },
+            Platform.BINARY_SENSOR: {
+                "power": {"device_class": BinarySensorDeviceClass.POWER},
+                "sleep": {"device_class": BinarySensorDeviceClass.RUNNING},
+                "standby_status": {"device_class": BinarySensorDeviceClass.RUNNING},
+                "domestic_outlet": {"device_class": BinarySensorDeviceClass.RUNNING},
+                "out_water": {
+                    "device_class": BinarySensorDeviceClass.RUNNING,
+                    "translation_key": "drinking_outlet"
+                },
+                "lack_water": {"device_class": BinarySensorDeviceClass.PROBLEM},
+                "full": {
+                    "device_class": BinarySensorDeviceClass.PROBLEM,
+                    "translation_key": "water_tank_full"
+                }
+            },
+            Platform.SENSOR: {
+                "input_temperature_sensing": {
+                    "device_class": SensorDeviceClass.TEMPERATURE,
+                    "unit_of_measurement": UnitOfTemperature.CELSIUS,
+                    "state_class": SensorStateClass.MEASUREMENT,
+                    "translation_key": "input_temperature_sensing"
+                },
+                "in_tds": {
+                    "device_class": SensorDeviceClass.WATER,
+                    "unit_of_measurement": "ppm",
+                    "state_class": SensorStateClass.MEASUREMENT
+                },
+                "out_tds": {
+                    "device_class": SensorDeviceClass.WATER,
+                    "unit_of_measurement": "ppm",
+                    "state_class": SensorStateClass.MEASUREMENT
+                },
+                "life_1": {
+                    "unit_of_measurement": "%",
+                    "state_class": SensorStateClass.MEASUREMENT,
+                    "translation_key": "filter_life_1"
+                },
+                "life_2": {
+                    "unit_of_measurement": "%",
+                    "state_class": SensorStateClass.MEASUREMENT,
+                    "translation_key": "filter_life_2"
+                },
+                "maxlife_1": {
+                    "unit_of_measurement": "months",
+                    "state_class": SensorStateClass.MEASUREMENT,
+                    "translation_key": "filter_max_life_1"
+                },
+                "maxlife_2": {
+                    "unit_of_measurement": "months",
+                    "state_class": SensorStateClass.MEASUREMENT,
+                    "translation_key": "filter_max_life_2"
+                },
+                "water_consumption": {
+                    "device_class": SensorDeviceClass.VOLUME,
+                    "unit_of_measurement": "ml",
+                    "state_class": SensorStateClass.TOTAL_INCREASING
+                },
+                "error": {
+                    "device_class": SensorDeviceClass.ENUM
+                }
+            }
+        }
     }
 }
