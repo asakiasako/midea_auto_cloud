@@ -347,5 +347,152 @@ DEVICE_MAPPING = {
                 }
             }
         }
+    },
+    "63200867": {
+        "rationale": ["off", "on"],
+        "queries": [{}],
+        "centralized": [],
+        "entities": {
+            Platform.SWITCH: {
+                "lock": {
+                    "device_class": SwitchDeviceClass.SWITCH,
+                    "translation_key": "child_lock"
+                },
+                "germicidal": {
+                    "device_class": SwitchDeviceClass.SWITCH,
+                    "translation_key": "high_temperature_germicidal"
+                },
+                "drainage": {
+                    "device_class": SwitchDeviceClass.SWITCH,
+                    "translation_key": "automatic_drainage"
+                },
+                "human_sensing_switch": {"device_class": SwitchDeviceClass.SWITCH},
+                "out_water": {"device_class": SwitchDeviceClass.SWITCH},
+                "set_germicidal_countdown": {"device_class": SwitchDeviceClass.SWITCH},
+            },
+            Platform.BINARY_SENSOR: {
+                "lack_water": {
+                    "device_class": BinarySensorDeviceClass.RUNNING,
+                    "translation_key": "refilling_water"
+                },
+                "out_water": {"device_class": BinarySensorDeviceClass.RUNNING},
+                "sleep": {"device_class": BinarySensorDeviceClass.RUNNING},
+                "standby_status": {"device_class": BinarySensorDeviceClass.RUNNING},
+            },
+            Platform.SENSOR: {
+                "current_temperature": {
+                    "device_class": SensorDeviceClass.TEMPERATURE,
+                    "unit_of_measurement": UnitOfTemperature.CELSIUS,
+                    "state_class": SensorStateClass.MEASUREMENT
+                },
+                "germicidal_countdown": {
+                    "device_class": SensorDeviceClass.DURATION,
+                    "unit_of_measurement": UnitOfTime.DAYS,
+                    "state_class": SensorStateClass.MEASUREMENT
+                },
+                "germicidal_left_time": {
+                    "device_class": SensorDeviceClass.DURATION,
+                    "unit_of_measurement": UnitOfTime.MINUTES,
+                    "state_class": SensorStateClass.MEASUREMENT
+                },
+                "water_consumption": {
+                    "device_class": SensorDeviceClass.VOLUME,
+                    "unit_of_measurement": "ml",
+                    "state_class": SensorStateClass.TOTAL_INCREASING
+                },
+                "error": {"device_class": SensorDeviceClass.ENUM},
+            },
+            Platform.SELECT: {
+                # Current quantification mode: 0 continuous flow, 1 small volume, 2 medium volume, 3 large volume
+                "cur_quantify": {
+                    "options": {
+                        "0": {"cur_quantify": 0},
+                        "1": {"cur_quantify": 1},
+                        "2": {"cur_quantify": 2},
+                        "3": {"cur_quantify": 3},
+                    },
+                    "translation_key": "cur_quantify_mode"
+                },
+                # Quantify 1: 50–300 ml, step 50 ml (internal unit = 10 ml, attribute value = displayed_value/10)
+                "quantify_1": {
+                    "options": {
+                        "50ml": {"quantify_1": 5},
+                        "100ml": {"quantify_1": 10},
+                        "150ml": {"quantify_1": 15},
+                        "200ml": {"quantify_1": 20},
+                        "250ml": {"quantify_1": 25},
+                        "300ml": {"quantify_1": 30},
+                    }
+                },
+                # Quantify 2: 150–500 ml, step 50 ml
+                "quantify_2": {
+                    "options": {
+                        "150ml": {"quantify_2": 15},
+                        "200ml": {"quantify_2": 20},
+                        "250ml": {"quantify_2": 25},
+                        "300ml": {"quantify_2": 30},
+                        "350ml": {"quantify_2": 35},
+                        "400ml": {"quantify_2": 40},
+                        "450ml": {"quantify_2": 45},
+                        "500ml": {"quantify_2": 50},
+                    }
+                },
+                # Quantify 3: 300–700 ml, step 50 ml
+                "quantify_3": {
+                    "options": {
+                        "300ml": {"quantify_3": 30},
+                        "350ml": {"quantify_3": 35},
+                        "400ml": {"quantify_3": 40},
+                        "450ml": {"quantify_3": 45},
+                        "500ml": {"quantify_3": 50},
+                        "550ml": {"quantify_3": 55},
+                        "600ml": {"quantify_3": 60},
+                        "650ml": {"quantify_3": 65},
+                        "700ml": {"quantify_3": 70},
+                    }
+                },
+                "custom_temperature_1": {
+                    "options": {
+                        "35°C": {"custom_temperature_1": 35},
+                        "40°C": {"custom_temperature_1": 40},
+                        "45°C": {"custom_temperature_1": 45},
+                        "50°C": {"custom_temperature_1": 50},
+                        "55°C": {"custom_temperature_1": 55},
+                        "60°C": {"custom_temperature_1": 60},
+                        "65°C": {"custom_temperature_1": 65},
+                        "70°C": {"custom_temperature_1": 70},
+                        "75°C": {"custom_temperature_1": 75},
+                        "80°C": {"custom_temperature_1": 80},
+                        "85°C": {"custom_temperature_1": 85},
+                        "90°C": {"custom_temperature_1": 90},
+                        "95°C": {"custom_temperature_1": 95},
+                    },
+                    "unit_of_measurement": UnitOfTemperature.CELSIUS,
+                    "device_class": SensorDeviceClass.TEMPERATURE
+                },
+                # Settable germicidal countdown days: 7,10,15,20,25,30
+                "set_germicidal_countdown_days": {
+                    "options": {
+                        "7": {"set_germicidal_countdown_days": 7},
+                        "10": {"set_germicidal_countdown_days": 10},
+                        "15": {"set_germicidal_countdown_days": 15},
+                        "20": {"set_germicidal_countdown_days": 20},
+                        "25": {"set_germicidal_countdown_days": 25},
+                        "30": {"set_germicidal_countdown_days": 30},
+                    }
+                },
+                # Screen off time: 10s,30s,1m,2m,3m,5m (stored as seconds)
+                "screenout_time": {
+                    "options": {
+                        "10s": {"screenout_time": 10},
+                        "30s": {"screenout_time": 30},
+                        "1m": {"screenout_time": 60},
+                        "2m": {"screenout_time": 120},
+                        "3m": {"screenout_time": 180},
+                        "5m": {"screenout_time": 300},
+                    }
+                },
+            }
+        }
     }
 }

@@ -264,6 +264,12 @@
       "lack_water": {
         "name": "缺水"
       },
+      "out_water": {
+        "name": "出水"
+      },
+      "refilling_water": {
+        "name": "补水中"
+      },
       "high_temperature_work": {
         "name": "高温工作"
       },
@@ -422,6 +428,15 @@
       "db_softener": {
         "name": "柔顺剂"
       },
+      "cur_quantify_mode": {
+        "name": "定量设置",
+        "state": {
+          "0": "连续",
+          "1": "小量用水",
+          "2": "普通用水",
+          "3": "大量用水"
+        }
+      },
       "db_temperature": {
         "name": "温度"
       },
@@ -454,6 +469,40 @@
       },
       "error_type": {
         "name": "错误类型"
+      },
+      "quantify_1": {
+        "name": "小量用水"
+      },
+      "quantify_2": {
+        "name": "普通用水"
+      },
+      "quantify_3": {
+        "name": "大量用水"
+      },
+      "custom_temperature_1": {
+        "name": "自定义温度"
+      },
+      "screenout_time": {
+        "name": "熄屏时间",
+          "state": {
+              "10s": "10秒",
+              "30s": "30秒",
+              "1m": "1分钟",
+              "2m": "2分钟",
+              "3m": "3分钟",
+              "5m": "5分钟"
+          }
+      },
+      "set_germicidal_countdown_days": {
+        "name": "高温杀菌提醒周期",
+        "state": {
+          "7": "7天",
+          "10": "10天",
+          "15": "15天",
+          "20": "20天",
+          "25": "25天",
+          "30": "30天"
+        }
       },
       "fan_setting": {
         "name": "风扇档位"
@@ -921,6 +970,12 @@
       },
       "gas_lift_percent": {
         "name": "燃气提升百分比"
+      },
+      "germicidal_countdown": {
+        "name": "杀菌提醒剩余天数"
+      },
+      "germicidal_left_time": {
+        "name": "杀菌剩余时间"
       },
       "hcho_value": {
         "name": "甲醛值"
@@ -1540,16 +1595,16 @@
       "out_tds": {
         "name": "纯水TDS"
       },
-      "life_1": {
+      "filter_life_1": {
         "name": "RO滤芯剩余寿命"
       },
-      "life_2": {
+      "filter_life_2": {
         "name": "PCB滤芯剩余寿命"
       },
-      "maxlife_1": {
+      "filter_max_life_1": {
         "name": "RO滤芯最长寿命"
       },
-      "maxlife_2": {
+      "filter_max_life_2": {
         "name": "PCB滤芯最长寿命"
       },
       "water_consumption": {
@@ -1980,6 +2035,15 @@
       },
       "holiday_state": {
         "name": "假日状态"
+      },
+      "high_temperature_germicidal": {
+        "name": "高温杀菌"
+      },
+      "automatic_drainage": {
+        "name": "一键排水"
+      },
+      "human_sensing_switch": {
+        "name": "感应亮屏"
       },
       "humidity_check_enable": {
         "name": "湿度检测启用"

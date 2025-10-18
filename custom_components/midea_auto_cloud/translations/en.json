@@ -264,6 +264,12 @@
       "lack_water": {
         "name": "Lack Water"
       },
+      "out_water": {
+        "name": "Water Outlet"
+      },
+      "refilling_water": {
+        "name": "Refilling"
+      },
       "high_temperature_work": {
         "name": "High Temperature Work"
       },
@@ -418,6 +424,15 @@
       "db_softener": {
         "name": "DB Softener"
       },
+      "cur_quantify_mode": {
+        "name": "Current Quantify Mode",
+        "state": {
+          "0": "Continuous",
+          "1": "Small",
+          "2": "Medium",
+          "3": "Large"
+        }
+      },
       "db_temperature": {
         "name": "DB Temperature"
       },
@@ -450,6 +465,40 @@
       },
       "error_type": {
         "name": "Error Type"
+      },
+      "quantify_1": {
+        "name": "Small Volume"
+      },
+      "quantify_2": {
+        "name": "Medium Volume"
+      },
+      "quantify_3": {
+        "name": "Large Volume"
+      },
+      "custom_temperature_1": {
+        "name": "Custom Temperature"
+      },
+      "screenout_time": {
+        "name": "Screen Out Time",
+        "state": {
+            "10s": "10 Seconds",
+            "30s": "30 Seconds",
+            "1m": "1 Minute",
+            "2m": "2 Minutes",
+            "3m": "3 Minutes",
+            "5m": "5 Minutes"
+        }
+      },
+      "set_germicidal_countdown_days": {
+        "name": "Set Germicidal Countdown Days",
+        "state": {
+          "7": "7 Days",
+          "10": "10 Days",
+          "15": "15 Days",
+          "20": "20 Days",
+          "25": "25 Days",
+          "30": "30 Days"
+        }
       },
       "fan_setting": {
         "name": "Fan Level"
@@ -917,6 +966,12 @@
       },
       "gas_lift_percent": {
         "name": "Gas Lift Percent"
+      },
+      "germicidal_countdown": {
+        "name": "Germicidal Reminder Countdown"
+      },
+      "germicidal_left_time": {
+        "name": "Germicidal Left Time"
       },
       "hcho_value": {
         "name": "HCHO Value"
@@ -1536,16 +1591,16 @@
       "out_tds": {
         "name": "Outlet TDS"
       },
-      "life_1": {
+      "filter_life_1": {
         "name": "RO Cartridge Life"
       },
-      "life_2": {
+      "filter_life_2": {
         "name": "PCB Cartridge Life"
       },
-      "maxlife_1": {
+      "filter_max_life_1": {
         "name": "RO Cartridge Max Life"
       },
-      "maxlife_2": {
+      "filter_max_life_2": {
         "name": "PCB Cartridge Max Life"
       },
       "water_consumption": {
@@ -1976,6 +2031,15 @@
       },
       "holiday_state": {
         "name": "Holiday State"
+      },
+      "high_temperature_germicidal": {
+        "name": "High Temperature Germicidal"
+      },
+      "automatic_drainage": {
+        "name": "Automatic Drainage"
+      },
+      "human_sensing_switch": {
+        "name": "Human Sensing"
       },
       "humidity_check_enable": {
         "name": "Humidity Check Enable"
