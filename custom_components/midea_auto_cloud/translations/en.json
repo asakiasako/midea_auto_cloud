@@ -320,6 +320,18 @@
       },
       "standby_status": {
         "name": "Standby Status"
+      },
+      "domestic_outlet": {
+        "name": "Domestic Outlet"
+      },
+      "drinking_outlet": {
+        "name": "Drinking Outlet"
+      },
+      "sleep": {
+        "name": "Sleep"
+      },
+      "water_tank_full": {
+        "name": "Water Tank Full"
       }
     },
     "climate": {
@@ -1517,6 +1529,36 @@
       },
       "heat_temp_set": {
         "name": "Heat Temperature Set"
+      },
+      "in_tds": {
+        "name": "Inlet TDS"
+      },
+      "out_tds": {
+        "name": "Outlet TDS"
+      },
+      "filter_life_1": {
+        "name": "RO Cartridge Life"
+      },
+      "filter_life_2": {
+        "name": "PCB Cartridge Life"
+      },
+      "maxlife_1": {
+        "name": "RO Cartridge Max Life"
+      },
+      "maxlife_2": {
+        "name": "PCB Cartridge Max Life"
+      },
+      "wash_filter_cartridge": {
+        "name": "Wash Filter Cartridge"
+      },
+      "smart_no_obsolete_water": {
+        "name": "Smart No Obsolete Water"
+      },
+      "no_obsolete_water_extreme_mode": {
+        "name": "No Obsolete Water Extreme Mode"
+      },
+      "water_consumption": {
+        "name": "Water Consumption"
       }
     },
     "light": {

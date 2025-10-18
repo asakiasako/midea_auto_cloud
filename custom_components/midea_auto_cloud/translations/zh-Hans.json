@@ -320,6 +320,18 @@
       },
       "standby_status": {
         "name": "待机状态"
+      },
+      "domestic_outlet": {
+        "name": "生活出水"
+      },
+      "drinking_outlet": {
+        "name": "直饮出水"
+      },
+      "sleep": {
+        "name": "休眠"
+      },
+      "water_tank_full": {
+        "name": "水箱满"
       }
     },
     "climate": {
@@ -1502,7 +1514,7 @@
         "name": "延时时间"
       },
       "input_temperature_sensing": {
-        "name": "输入温度"
+        "name": "进水温度"
       },
       "hot_pot_temperature": {
         "name": "热水温度"
@@ -1521,6 +1533,36 @@
       },
       "heat_temp_set": {
         "name": "制热设定温度"
+      },
+      "in_tds": {
+        "name": "原水TDS"
+      },
+      "out_tds": {
+        "name": "纯水TDS"
+      },
+      "filter_life_1": {
+        "name": "RO滤芯剩余寿命"
+      },
+      "filter_life_2": {
+        "name": "PCB滤芯剩余寿命"
+      },
+      "maxlife_1": {
+        "name": "RO滤芯最长寿命"
+      },
+      "maxlife_2": {
+        "name": "PCB滤芯最长寿命"
+      },
+      "wash_filter_cartridge": {
+        "name": "滤芯冲洗"
+      },
+      "smart_no_obsolete_water": {
+        "name": "智享零陈水"
+      },
+      "no_obsolete_water_extreme_mode": {
+        "name": "零陈水极致模式"
+      },
+      "water_consumption": {
+        "name": "累计用水量"
       }
     },
     "light": {
