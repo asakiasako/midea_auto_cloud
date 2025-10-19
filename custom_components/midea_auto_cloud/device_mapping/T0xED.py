@@ -301,7 +301,7 @@ DEVICE_MAPPING = {
                 }
             },
             Platform.SENSOR: {
-                "input_temperature_sensing": {
+                "input_temperature_Sensing": {
                     "device_class": SensorDeviceClass.TEMPERATURE,
                     "unit_of_measurement": UnitOfTemperature.CELSIUS,
                     "state_class": SensorStateClass.MEASUREMENT,
@@ -367,7 +367,6 @@ DEVICE_MAPPING = {
                     "translation_key": "automatic_drainage"
                 },
                 "human_sensing_switch": {"device_class": SwitchDeviceClass.SWITCH},
-                "out_water": {"device_class": SwitchDeviceClass.SWITCH},
                 "set_germicidal_countdown": {"device_class": SwitchDeviceClass.SWITCH},
             },
             Platform.BINARY_SENSOR: {

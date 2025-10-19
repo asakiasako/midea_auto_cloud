@@ -2487,6 +2487,9 @@
       },
       "no_obsolete_water_extreme_mode": {
         "name": "No Obsolete Water Extreme Mode"
+      },
+      "set_germicidal_countdown": {
+        "name": "Germicidal Reminder"
       }
     }
   }

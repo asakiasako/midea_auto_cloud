@@ -431,7 +431,7 @@
       "cur_quantify_mode": {
         "name": "定量设置",
         "state": {
-          "0": "连续",
+          "0": "连续出水",
           "1": "小量用水",
           "2": "普通用水",
           "3": "大量用水"
@@ -2491,6 +2491,9 @@
       },
       "no_obsolete_water_extreme_mode": {
         "name": "零陈水极致模式"
+      },
+      "set_germicidal_countdown": {
+        "name": "高温杀菌提醒"
       }
     }
   }
