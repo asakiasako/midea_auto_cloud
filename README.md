@@ -1,6 +1,15 @@
 # Midea Auto Cloud
  
- [![Stable](https://img.shields.io/github/v/release/sususweet/midea-meiju-codec)](https://github.com/sususweet/midea-meiju-codec/releases/latest)
+ [![Stable](https://img.shields.io/github/v/release/asakiasako/midea_auto_cloud)](https://github.com/asakiasako/midea_auto_cloud/releases/latest)
+
+该项目 Fork 自 https://github.com/sususweet/midea_auto_cloud
+
+添加和针对优化的设备：
+- COLMO Turing Central AC: 实现了温湿度控制，匹配了空调模式，实现了 APP 相同的功能
+- COLMO S1000 Water Purifier
+- COLMO RA09 Drinking Machine
+
+-------------------------
 
 通过网络获取你美居家庭中的设备，并且通过美的云端进行控制。
 
