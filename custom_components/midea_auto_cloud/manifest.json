@@ -1,11 +1,11 @@
 {
-  "domain": "midea_auto_cloud",
-  "name": "Midea Auto Cloud",
-  "codeowners": ["@sususweet"],
+  "domain": "midea_auto_cloud_royal",
+  "name": "Midea Auto Cloud Royal",
+  "codeowners": ["@asakiasako"],
   "config_flow": true,
-  "documentation": "https://github.com/sususweet/midea-meiju-codec#readme",
+  "documentation": "https://github.com/asakiasako/midea_auto_cloud/blob/master/README.md",
   "iot_class": "cloud_push",
-  "issue_tracker": "https://github.com/sususweet/midea-meiju-codec/issues",
+  "issue_tracker": "https://github.com/asakiasako/midea_auto_cloud/issues",
   "requirements": ["lupa>=2.0"],
-  "version": "v0.1.10"
+  "version": "v0.1.12"
 }
