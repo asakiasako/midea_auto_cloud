@@ -1,4 +1,4 @@
-# Midea Auto Cloud
+# Midea Auto Cloud Royal
  
  [![Stable](https://img.shields.io/github/v/release/asakiasako/midea_auto_cloud)](https://github.com/asakiasako/midea_auto_cloud/releases/latest)
 
